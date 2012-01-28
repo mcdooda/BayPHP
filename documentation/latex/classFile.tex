@@ -1,0 +1,159 @@
+\hypertarget{classFile}{
+\section{File Class Reference}
+\label{classFile}\index{File@{File}}
+}
+
+
+Retrieves data about bayfiles files by sending requests to \href{http://api.bayfiles.com/v1/account/.}{\tt http://api.bayfiles.com/v1/account/.}  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFile_ad6ff8555973b48a3448ac72b57d8eb0c}{\_\-\_\-construct} (\$fileId, \$infoToken, \$deleteToken=null, \$size=null, \$sha1=null, \$name=null, \$owner=null)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classFile}{File} constructor. \end{DoxyCompactList}\item 
+\hyperlink{classFile_a1734f775deab26bff1d65b81bfcde912}{setUploadLinks} (\$linksUrl, \$downloadUrl, \$deleteUrl)
+\begin{DoxyCompactList}\small\item\em setter for the urls returned by the upload page \end{DoxyCompactList}\item 
+\hypertarget{classFile_ac03d207f917ec00633b2247ce677e6fa}{
+\hyperlink{classFile_ac03d207f917ec00633b2247ce677e6fa}{getFileId} ()}
+\label{classFile_ac03d207f917ec00633b2247ce677e6fa}
+
+\begin{DoxyCompactList}\small\item\em file id getter \end{DoxyCompactList}\item 
+\hypertarget{classFile_a42aef8a534d0942e56e9931e5f0f9bc6}{
+\hyperlink{classFile_a42aef8a534d0942e56e9931e5f0f9bc6}{getInfoToken} ()}
+\label{classFile_a42aef8a534d0942e56e9931e5f0f9bc6}
+
+\begin{DoxyCompactList}\small\item\em info token getter \end{DoxyCompactList}\item 
+\hypertarget{classFile_af2a662256b5fe5246cdda50612206ad6}{
+\hyperlink{classFile_af2a662256b5fe5246cdda50612206ad6}{getOwner} ()}
+\label{classFile_af2a662256b5fe5246cdda50612206ad6}
+
+\begin{DoxyCompactList}\small\item\em owner getter (should be an \hyperlink{classAccount}{Account} instance) \end{DoxyCompactList}\item 
+\hypertarget{classFile_adc2fcd31a241309a958d11967c146be4}{
+\hyperlink{classFile_adc2fcd31a241309a958d11967c146be4}{getDeleteToken} ()}
+\label{classFile_adc2fcd31a241309a958d11967c146be4}
+
+\begin{DoxyCompactList}\small\item\em delete token getter \end{DoxyCompactList}\item 
+\hypertarget{classFile_a32fad9fa9d249c403deb502bf9ac5463}{
+\hyperlink{classFile_a32fad9fa9d249c403deb502bf9ac5463}{getSize} ()}
+\label{classFile_a32fad9fa9d249c403deb502bf9ac5463}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /file/info/(fileId)/(infoToken) if the size is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classFile_ac91ce6dc57dd0f2aee93be7fa5ef895b}{
+\hyperlink{classFile_ac91ce6dc57dd0f2aee93be7fa5ef895b}{getSha1} ()}
+\label{classFile_ac91ce6dc57dd0f2aee93be7fa5ef895b}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /file/info/(fileId)/(infoToken) if the SHA1 hash is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classFile_a3fa9782957fc41467358e7295ca4ea74}{
+\hyperlink{classFile_a3fa9782957fc41467358e7295ca4ea74}{getName} ()}
+\label{classFile_a3fa9782957fc41467358e7295ca4ea74}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /file/info/(fileId)/(infoToken) if the name is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classFile_a475cf491edd73fc52d6bc8f9ad747d6c}{
+\hyperlink{classFile_a475cf491edd73fc52d6bc8f9ad747d6c}{getLinksUrl} ()}
+\label{classFile_a475cf491edd73fc52d6bc8f9ad747d6c}
+
+\begin{DoxyCompactList}\small\item\em links url getter \end{DoxyCompactList}\item 
+\hypertarget{classFile_accbc8e239744ebc066ee473a0ae9c2bf}{
+\hyperlink{classFile_accbc8e239744ebc066ee473a0ae9c2bf}{getDownloadUrl} ()}
+\label{classFile_accbc8e239744ebc066ee473a0ae9c2bf}
+
+\begin{DoxyCompactList}\small\item\em download url getter \end{DoxyCompactList}\item 
+\hypertarget{classFile_ad3be79852f78b701fe99b85c81e2cdd3}{
+\hyperlink{classFile_ad3be79852f78b701fe99b85c81e2cdd3}{getDeleteUrl} ()}
+\label{classFile_ad3be79852f78b701fe99b85c81e2cdd3}
+
+\begin{DoxyCompactList}\small\item\em delete url getter \end{DoxyCompactList}\item 
+\hypertarget{classFile_a0abbca3d8b81e29f01db75ec19d0ef84}{
+\hyperlink{classFile_a0abbca3d8b81e29f01db75ec19d0ef84}{delete} ()}
+\label{classFile_a0abbca3d8b81e29f01db75ec19d0ef84}
+
+\begin{DoxyCompactList}\small\item\em deletes the file, throws a \hyperlink{classFileException}{FileException} if the delete token was not given in the constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Retrieves data about bayfiles files by sending requests to \href{http://api.bayfiles.com/v1/account/.}{\tt http://api.bayfiles.com/v1/account/.} 
+
+Represents a Bayfiles file. fileId and infoToken are required in order to get the others attributes, except deleteToken and owner which are provided by the \hyperlink{classAccount_aa0dc98ce30abcd3d1a73c1a3e123a544}{Account::getFiles()} method. 
+
+Definition at line 15 of file file.php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFile_ad6ff8555973b48a3448ac72b57d8eb0c}{
+\index{File@{File}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!File@{File}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}File::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{fileId, }
+\item[{\$}]{infoToken, }
+\item[{\$}]{deleteToken = {\ttfamily null}, }
+\item[{\$}]{size = {\ttfamily null}, }
+\item[{\$}]{sha1 = {\ttfamily null}, }
+\item[{\$}]{name = {\ttfamily null}, }
+\item[{\$}]{owner = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{classFile_ad6ff8555973b48a3448ac72b57d8eb0c}
+
+
+\hyperlink{classFile}{File} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fileId} & file id \\
+\hline
+{\em infoToken} & info token \\
+\hline
+{\em deleteToken} & the delete token is optional but the file cannot be deleted if it is not provided \\
+\hline
+{\em size} & file size \\
+\hline
+{\em sha1} & SHA1 hash code \\
+\hline
+{\em name} & file name \\
+\hline
+{\em owner} & file owner \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 41 of file file.php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFile_a1734f775deab26bff1d65b81bfcde912}{
+\index{File@{File}!setUploadLinks@{setUploadLinks}}
+\index{setUploadLinks@{setUploadLinks}!File@{File}}
+\subsubsection[{setUploadLinks}]{\setlength{\rightskip}{0pt plus 5cm}File::setUploadLinks (
+\begin{DoxyParamCaption}
+\item[{\$}]{linksUrl, }
+\item[{\$}]{downloadUrl, }
+\item[{\$}]{deleteUrl}
+\end{DoxyParamCaption}
+)}}
+\label{classFile_a1734f775deab26bff1d65b81bfcde912}
+
+
+setter for the urls returned by the upload page 
+
+
+\begin{DoxyParams}{Parameters}
+{\em linksUrl} & links url \\
+\hline
+{\em downloadUrl} & download url \\
+\hline
+{\em deleteUrl} & delete url \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 64 of file file.php.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+bayphp/file.php\end{DoxyCompactItemize}

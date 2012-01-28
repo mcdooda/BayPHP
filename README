@@ -1,0 +1,26 @@
+BayPHP 0.1
+Bayfiles PHP library for Bayfiles API v1 Beta
+
+This software is distributed under the MIT license. See LICENSE for more
+information.
+
+By Nicolas DODELIER <nicolas.dod@gmail.com>
+Please fork me at https://github.com/mcdooda/BayPHP
+
+This library provides access to the bayfiles API through bay\Account and
+bay\File classes.
+
+See examples/ for code examples.
+See documentation/ for the doxygen documention.
+
+Dependencies:
+- pecl http
+
+Incoming updates:
+- support for uploading files
+- support for re-logging in when the timeout expires
+- support for deleting a file by requesting the deleteToken before
+- support for easing the use of the Account class as a $_SESSION
+- better documentation
+- more examples
+

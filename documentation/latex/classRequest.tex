@@ -1,0 +1,223 @@
+\hypertarget{classRequest}{
+\section{Request Class Reference}
+\label{classRequest}\index{Request@{Request}}
+}
+
+
+Sends http requests to the Bayfiles API.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classRequest_a7a3dc4998f1b9c696543c112f34965b5}{\_\-\_\-construct} (\$url, \$user=null)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classRequest}{Request} constructor. \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a432fdb6b9f7a071ef270d7ec938bf74d}{setMethod} (\$method)
+\begin{DoxyCompactList}\small\item\em sets the http request method \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a9c5afc9327a6343f2522e580cc156882}{addUploadFile} (\$fieldname, \$filename)
+\begin{DoxyCompactList}\small\item\em adds a file to upload when calling \hyperlink{classRequest_a9716d01ed89fa00bfb6accd5dea70690}{send()} method \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a9716d01ed89fa00bfb6accd5dea70690}{send} (\$errorType=null)
+\begin{DoxyCompactList}\small\item\em sends the request \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a73eb2c038803d2a08ef20235684d8db7}{hasError} ()
+\begin{DoxyCompactList}\small\item\em returns whether the request failed \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a293e3cf982bf561bc173dd4da46bf305}{getError} ()
+\begin{DoxyCompactList}\small\item\em returns the error message given by the error field of the json response \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a58b89ed8e9d25ff84259cd19077f88d6}{getResponse} (\$key=null)
+\begin{DoxyCompactList}\small\item\em the parsed json response \end{DoxyCompactList}\item 
+\hyperlink{classRequest_a6bd35712e69a808c3c3b66fc7ec5986b}{getUrl} ()
+\begin{DoxyCompactList}\small\item\em the request url \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sends http requests to the Bayfiles API. 
+
+Definition at line 10 of file request.php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classRequest_a7a3dc4998f1b9c696543c112f34965b5}{
+\index{Request@{Request}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!Request@{Request}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}Request::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{url, }
+\item[{\$}]{user = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a7a3dc4998f1b9c696543c112f34965b5}
+
+
+\hyperlink{classRequest}{Request} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em url} & the request url, without the base url nor the ?session=xxx suffix \\
+\hline
+{\em user} & if provided, the request is sent using a specific account \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 24 of file request.php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classRequest_a9c5afc9327a6343f2522e580cc156882}{
+\index{Request@{Request}!addUploadFile@{addUploadFile}}
+\index{addUploadFile@{addUploadFile}!Request@{Request}}
+\subsubsection[{addUploadFile}]{\setlength{\rightskip}{0pt plus 5cm}Request::addUploadFile (
+\begin{DoxyParamCaption}
+\item[{\$}]{fieldname, }
+\item[{\$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a9c5afc9327a6343f2522e580cc156882}
+
+
+adds a file to upload when calling \hyperlink{classRequest_a9716d01ed89fa00bfb6accd5dea70690}{send()} method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fieldname} & \\
+\hline
+{\em filename} & name of the local file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file request.php.
+
+\hypertarget{classRequest_a293e3cf982bf561bc173dd4da46bf305}{
+\index{Request@{Request}!getError@{getError}}
+\index{getError@{getError}!Request@{Request}}
+\subsubsection[{getError}]{\setlength{\rightskip}{0pt plus 5cm}Request::getError (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a293e3cf982bf561bc173dd4da46bf305}
+
+
+returns the error message given by the error field of the json response 
+
+\begin{DoxyReturn}{Returns}
+a string containing the error message 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file request.php.
+
+\hypertarget{classRequest_a58b89ed8e9d25ff84259cd19077f88d6}{
+\index{Request@{Request}!getResponse@{getResponse}}
+\index{getResponse@{getResponse}!Request@{Request}}
+\subsubsection[{getResponse}]{\setlength{\rightskip}{0pt plus 5cm}Request::getResponse (
+\begin{DoxyParamCaption}
+\item[{\$}]{key = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a58b89ed8e9d25ff84259cd19077f88d6}
+
+
+the parsed json response 
+
+\begin{DoxyReturn}{Returns}
+an stdClass object read from the json string 
+\end{DoxyReturn}
+
+
+Definition at line 114 of file request.php.
+
+\hypertarget{classRequest_a6bd35712e69a808c3c3b66fc7ec5986b}{
+\index{Request@{Request}!getUrl@{getUrl}}
+\index{getUrl@{getUrl}!Request@{Request}}
+\subsubsection[{getUrl}]{\setlength{\rightskip}{0pt plus 5cm}Request::getUrl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a6bd35712e69a808c3c3b66fc7ec5986b}
+
+
+the request url 
+
+\begin{DoxyReturn}{Returns}
+the request url composed of the base url (\href{http://api.bayfiles.com/v1}{\tt http://api.bayfiles.com/v1}), the request and optionaly a ?session=xxx suffix 
+\end{DoxyReturn}
+
+
+Definition at line 124 of file request.php.
+
+\hypertarget{classRequest_a73eb2c038803d2a08ef20235684d8db7}{
+\index{Request@{Request}!hasError@{hasError}}
+\index{hasError@{hasError}!Request@{Request}}
+\subsubsection[{hasError}]{\setlength{\rightskip}{0pt plus 5cm}Request::hasError (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a73eb2c038803d2a08ef20235684d8db7}
+
+
+returns whether the request failed 
+
+\begin{DoxyReturn}{Returns}
+a boolean meaning if the error message was empty or not after the request 
+\end{DoxyReturn}
+
+
+Definition at line 94 of file request.php.
+
+\hypertarget{classRequest_a9716d01ed89fa00bfb6accd5dea70690}{
+\index{Request@{Request}!send@{send}}
+\index{send@{send}!Request@{Request}}
+\subsubsection[{send}]{\setlength{\rightskip}{0pt plus 5cm}Request::send (
+\begin{DoxyParamCaption}
+\item[{\$}]{errorType = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a9716d01ed89fa00bfb6accd5dea70690}
+
+
+sends the request 
+
+
+\begin{DoxyParams}{Parameters}
+{\em errorType} & if given, any error throws an exception of the given type, returns the error message instead \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the error message or an empty string if errorType is null 
+\end{DoxyReturn}
+
+
+Definition at line 66 of file request.php.
+
+\hypertarget{classRequest_a432fdb6b9f7a071ef270d7ec938bf74d}{
+\index{Request@{Request}!setMethod@{setMethod}}
+\index{setMethod@{setMethod}!Request@{Request}}
+\subsubsection[{setMethod}]{\setlength{\rightskip}{0pt plus 5cm}Request::setMethod (
+\begin{DoxyParamCaption}
+\item[{\$}]{method}
+\end{DoxyParamCaption}
+)}}
+\label{classRequest_a432fdb6b9f7a071ef270d7ec938bf74d}
+
+
+sets the http request method 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & http method, should be HTTP\_\-METH\_\-GET or HTTP\_\-METH\_\-POST \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file request.php.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+bayphp/request.php\end{DoxyCompactItemize}

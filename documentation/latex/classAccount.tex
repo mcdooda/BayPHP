@@ -1,0 +1,229 @@
+\hypertarget{classAccount}{
+\section{Account Class Reference}
+\label{classAccount}\index{Account@{Account}}
+}
+
+
+Retrieves data about bayfiles accounts by sending requests to \href{http://api.bayfiles.com/v1/account/.}{\tt http://api.bayfiles.com/v1/account/.}  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAccount_ada0eeeed16967d6e548488030b5bdaef}{\_\-\_\-construct} (\$username, \$password)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classAccount}{Account} construct. \end{DoxyCompactList}\item 
+\hyperlink{classAccount_aadd43a144ad6802e0fa8967e437fd8bb}{getUsername} ()
+\begin{DoxyCompactList}\small\item\em user name getter \end{DoxyCompactList}\item 
+\hyperlink{classAccount_ad94891116350680172a3c2529d7f0570}{getPassword} ()
+\begin{DoxyCompactList}\small\item\em password getter \end{DoxyCompactList}\item 
+\hyperlink{classAccount_a3b37b3393454a1352929b4010ac8e9c3}{getSession} ()
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the session string is not cached yet and returns it \end{DoxyCompactList}\item 
+\hyperlink{classAccount_ace3c3419f3683e4a0a0dba26bd91a194}{getEmail} ()
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the email is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classAccount_a07d537af3b7de4caffa58c1a67763966}{
+\hyperlink{classAccount_a07d537af3b7de4caffa58c1a67763966}{getFilesCount} ()}
+\label{classAccount_a07d537af3b7de4caffa58c1a67763966}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the files count is not cached yet and returns it \end{DoxyCompactList}\item 
+\hyperlink{classAccount_acead8f2ef19395aeae6a8ab94e21e50b}{getStorage} ()
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the session string is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classAccount_af1c983ce957b5e181633c2aff278d15f}{
+\hyperlink{classAccount_af1c983ce957b5e181633c2aff278d15f}{isPremium} ()}
+\label{classAccount_af1c983ce957b5e181633c2aff278d15f}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the premiumness is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classAccount_a5f7f8ff34b4befbf757455e8011d1832}{
+\hyperlink{classAccount_a5f7f8ff34b4befbf757455e8011d1832}{getExpires} ()}
+\label{classAccount_a5f7f8ff34b4befbf757455e8011d1832}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the session string is not cached yet and returns it \end{DoxyCompactList}\item 
+\hypertarget{classAccount_a84a49c7e2888e8cff244e25e1901d5d3}{
+\hyperlink{classAccount_a84a49c7e2888e8cff244e25e1901d5d3}{getCodes} ()}
+\label{classAccount_a84a49c7e2888e8cff244e25e1901d5d3}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/info if the number of codes is not cached yet and returns it \end{DoxyCompactList}\item 
+\hyperlink{classAccount_aa0dc98ce30abcd3d1a73c1a3e123a544}{getFiles} ()
+\begin{DoxyCompactList}\small\item\em sends a request to /account/files if this request has not been done yet. \end{DoxyCompactList}\item 
+\hypertarget{classAccount_a6a7ff1d886d9eb0894a71481912a59e5}{
+\hyperlink{classAccount_a6a7ff1d886d9eb0894a71481912a59e5}{editPassword} (\$value)}
+\label{classAccount_a6a7ff1d886d9eb0894a71481912a59e5}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/edit/password/(password) to edit the password \end{DoxyCompactList}\item 
+\hypertarget{classAccount_ad20b13631f56caa944b0791b4a0f648c}{
+\hyperlink{classAccount_ad20b13631f56caa944b0791b4a0f648c}{editEmail} (\$value)}
+\label{classAccount_ad20b13631f56caa944b0791b4a0f648c}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/edit/email/(email) to edit the email \end{DoxyCompactList}\item 
+\hypertarget{classAccount_a1dee4bb90b333fe6628d7898f8b50972}{
+\hyperlink{classAccount_a1dee4bb90b333fe6628d7898f8b50972}{login} ()}
+\label{classAccount_a1dee4bb90b333fe6628d7898f8b50972}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/login/(username)/(password) \end{DoxyCompactList}\item 
+\hypertarget{classAccount_a14df93ec30cd4bd0d7f3df839ce6e4d5}{
+\hyperlink{classAccount_a14df93ec30cd4bd0d7f3df839ce6e4d5}{logout} ()}
+\label{classAccount_a14df93ec30cd4bd0d7f3df839ce6e4d5}
+
+\begin{DoxyCompactList}\small\item\em sends a request to /account/logout \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Retrieves data about bayfiles accounts by sending requests to \href{http://api.bayfiles.com/v1/account/.}{\tt http://api.bayfiles.com/v1/account/.} 
+
+Definition at line 10 of file account.php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAccount_ada0eeeed16967d6e548488030b5bdaef}{
+\index{Account@{Account}!\_\-\_\-construct@{\_\-\_\-construct}}
+\index{\_\-\_\-construct@{\_\-\_\-construct}!Account@{Account}}
+\subsubsection[{\_\-\_\-construct}]{\setlength{\rightskip}{0pt plus 5cm}Account::\_\-\_\-construct (
+\begin{DoxyParamCaption}
+\item[{\$}]{username, }
+\item[{\$}]{password}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_ada0eeeed16967d6e548488030b5bdaef}
+
+
+\hyperlink{classAccount}{Account} construct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & username \\
+\hline
+{\em password} & password \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 31 of file account.php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classAccount_ace3c3419f3683e4a0a0dba26bd91a194}{
+\index{Account@{Account}!getEmail@{getEmail}}
+\index{getEmail@{getEmail}!Account@{Account}}
+\subsubsection[{getEmail}]{\setlength{\rightskip}{0pt plus 5cm}Account::getEmail (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_ace3c3419f3683e4a0a0dba26bd91a194}
+
+
+sends a request to /account/info if the email is not cached yet and returns it 
+
+\begin{DoxyReturn}{Returns}
+email 
+\end{DoxyReturn}
+
+
+Definition at line 86 of file account.php.
+
+\hypertarget{classAccount_aa0dc98ce30abcd3d1a73c1a3e123a544}{
+\index{Account@{Account}!getFiles@{getFiles}}
+\index{getFiles@{getFiles}!Account@{Account}}
+\subsubsection[{getFiles}]{\setlength{\rightskip}{0pt plus 5cm}Account::getFiles (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_aa0dc98ce30abcd3d1a73c1a3e123a544}
+
+
+sends a request to /account/files if this request has not been done yet. 
+
+\begin{DoxyReturn}{Returns}
+array of bay$\backslash$File(s) 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file account.php.
+
+\hypertarget{classAccount_ad94891116350680172a3c2529d7f0570}{
+\index{Account@{Account}!getPassword@{getPassword}}
+\index{getPassword@{getPassword}!Account@{Account}}
+\subsubsection[{getPassword}]{\setlength{\rightskip}{0pt plus 5cm}Account::getPassword (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_ad94891116350680172a3c2529d7f0570}
+
+
+password getter 
+
+\begin{DoxyReturn}{Returns}
+password 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file account.php.
+
+\hypertarget{classAccount_a3b37b3393454a1352929b4010ac8e9c3}{
+\index{Account@{Account}!getSession@{getSession}}
+\index{getSession@{getSession}!Account@{Account}}
+\subsubsection[{getSession}]{\setlength{\rightskip}{0pt plus 5cm}Account::getSession (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_a3b37b3393454a1352929b4010ac8e9c3}
+
+
+sends a request to /account/info if the session string is not cached yet and returns it 
+
+\begin{DoxyReturn}{Returns}
+session string 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file account.php.
+
+\hypertarget{classAccount_acead8f2ef19395aeae6a8ab94e21e50b}{
+\index{Account@{Account}!getStorage@{getStorage}}
+\index{getStorage@{getStorage}!Account@{Account}}
+\subsubsection[{getStorage}]{\setlength{\rightskip}{0pt plus 5cm}Account::getStorage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_acead8f2ef19395aeae6a8ab94e21e50b}
+
+
+sends a request to /account/info if the session string is not cached yet and returns it 
+
+\begin{DoxyReturn}{Returns}
+storage 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file account.php.
+
+\hypertarget{classAccount_aadd43a144ad6802e0fa8967e437fd8bb}{
+\index{Account@{Account}!getUsername@{getUsername}}
+\index{getUsername@{getUsername}!Account@{Account}}
+\subsubsection[{getUsername}]{\setlength{\rightskip}{0pt plus 5cm}Account::getUsername (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{classAccount_aadd43a144ad6802e0fa8967e437fd8bb}
+
+
+user name getter 
+
+\begin{DoxyReturn}{Returns}
+user name 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file account.php.
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+bayphp/account.php\end{DoxyCompactItemize}
