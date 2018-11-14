@@ -4,7 +4,7 @@ Bayfiles PHP library for Bayfiles API v1 Beta
 This software is distributed under the MIT license. See LICENSE for more
 information.
 
-By Nicolas DODELIER <nicolas.dod@gmail.com>
+
 Please fork me at https://github.com/mcdooda/BayPHP
 
 This library provides access to the bayfiles API through bay\Account and
